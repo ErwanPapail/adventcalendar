@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="two-one" />
+        <module name="two-two" />
+        <module name="one.one" />
+        <module name="three-one" />
+        <module name="one.two" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="advent-calendar" target="10" />
+      <module name="one.one" target="10" />
+      <module name="one.two" target="10" />
+      <module name="three-one" target="10" />
+      <module name="two-one" target="10" />
+      <module name="two-two" target="10" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
