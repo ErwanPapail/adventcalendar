@@ -6,20 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="two-one" />
-        <module name="two-two" />
-        <module name="one.one" />
-        <module name="three-one" />
         <module name="one.two" />
+        <module name="two-two" />
+        <module name="three-one" />
+        <module name="4.2" />
+        <module name="three-two" />
+        <module name="4.1" />
+        <module name="one.one" />
+        <module name="two-one" />
+        <module name="5.1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="4.1" target="10" />
+      <module name="4.2" target="10" />
+      <module name="5.1" target="10" />
       <module name="advent-calendar" target="10" />
       <module name="one.one" target="10" />
       <module name="one.two" target="10" />
       <module name="three-one" target="10" />
+      <module name="three-two" target="10" />
       <module name="two-one" target="10" />
       <module name="two-two" target="10" />
+      <module name="untitled" target="10" />
     </bytecodeTargetLevel>
   </component>
 </project>
