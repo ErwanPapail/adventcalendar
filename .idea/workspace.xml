@@ -2,12 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8259c152-f24b-4b20-a3e6-6e03f75c7b35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/three-one/src/main/java/FileLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/three-one/src/main/java/Movement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/three-one/src/main/resources/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/three-one/src/test/java/FileLoaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/three-one/src/test/java/MovementTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5.1/src/main/java/Instruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/src/main/java/FileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/src/main/java/FileLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/src/main/java/IntCodeProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/src/main/java/IntCodeProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/src/main/java/ProgramIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/src/main/java/ProgramIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/src/main/resources/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/src/main/resources/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/src/test/java/IntCodeProgramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/src/test/java/IntCodeProgramTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/target/5.1-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/5.1-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/classes/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/target/classes/FileLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/classes/FileLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/target/classes/IntCodeProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/classes/IntCodeProgram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/target/classes/META-INF/5.1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/target/classes/ProgramIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/classes/ProgramIO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/target/classes/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/classes/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.1/target/test-classes/IntCodeProgramTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/test-classes/IntCodeProgramTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/three-one/src/main/java/FileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/three-one/src/main/java/FileLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,21 +76,17 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Nelly\IdeaProjects\adventcalendar\three-two\src\test\java" />
-      <recent name="C:\Users\Erwan PAPAIL\IdeaProjects\advent-calendar\three-one\src\main\resources" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="models" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Nelly\IdeaProjects\adventcalendar\5.1\src\test\java" />
@@ -82,27 +95,37 @@
       <recent name="C:\Users\Nelly\IdeaProjects\adventcalendar\three-two\src\test\java" />
       <recent name="C:\Users\Nelly\IdeaProjects\adventcalendar\three-two\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nelly\IdeaProjects\adventcalendar\three-two\src\test\java" />
+      <recent name="C:\Users\Erwan PAPAIL\IdeaProjects\advent-calendar\three-one\src\main\resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.IntCodeProgramTest">
-    <configuration name="App (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="4.2" />
+      <module name="5.1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in 5.1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProgramIO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProgramIO" />
       <module name="5.1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in 5.1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="5.1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,36 +139,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordValidationServiceTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="4.2" />
+    <configuration name="IntCodeProgramTest.shouldCreateObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="5.1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PasswordValidationServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="IntCodeProgramTest" />
+      <option name="METHOD_NAME" value="shouldCreateObject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntCodeProgramTest.shouldExecuteComplexOperation1bis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="5.1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="IntCodeProgramTest" />
+      <option name="METHOD_NAME" value="shouldExecuteComplexOperation1bis" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.IntCodeProgramTest.shouldExecuteComplexOperation1bis" />
         <item itemvalue="JUnit.IntCodeProgramTest" />
-        <item itemvalue="JUnit.All in 5.1 (1)" />
-        <item itemvalue="JUnit.All in 5.1" />
-        <item itemvalue="Application.App (2)" />
-        <item itemvalue="JUnit.PasswordValidationServiceTest (1)" />
+        <item itemvalue="Application.ProgramIO" />
+        <item itemvalue="JUnit.IntCodeProgramTest.shouldCreateObject" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />

@@ -1,5 +1,5 @@
 App.class
 IntCodeProgram.class
 FileLoader.class
-OutputPrinter.class
+ProgramIO.class
 ProgramRunner.class

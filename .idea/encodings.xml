@@ -2,10 +2,11 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/4.1" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/4.1/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/4.1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/4.2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/4.2/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/4.2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/5.1" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/5.1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/5.1/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/one-one" charset="UTF-8" />
@@ -17,6 +18,7 @@
     <file url="file://$PROJECT_DIR$/three-one" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/three-one/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/three-one/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/three-two" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/three-two/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/three-two/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/two-one" charset="UTF-8" />

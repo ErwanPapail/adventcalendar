@@ -20,7 +20,7 @@ public class FileLoader {
     public List<List<Movement>> getFileContent() {
         List<List<Movement>> lines = new ArrayList(new ArrayList<>());
 
-        try (final var reader = new FileReader("C:\\Users\\Nelly\\IdeaProjects\\adventcalendar\\three-one\\target\\classes\\input.txt");
+        try (final var reader = new FileReader("C:\\Users\\Nelly\\IdeaProjects\\adventcalendar\\5.1\\target\\classes\\input.txt");
              final var br = new BufferedReader(reader)) {
 
             var line = "";

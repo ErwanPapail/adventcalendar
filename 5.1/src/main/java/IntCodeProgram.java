@@ -1,10 +1,13 @@
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class IntCodeProgram {
 
     private List<Integer> intCode;
     private final ProgramIO programIO;
+    private int instructionIndex = 0;
 
     IntCodeProgram(final List<Integer> intCode, final ProgramIO programIO) {
         this.intCode = intCode;
@@ -14,15 +17,16 @@ public class IntCodeProgram {
     List<Integer> executeProgram() {
         List<Integer> currentCode = new LinkedList<>(this.intCode);
 
-        for (var index = 0; index < this.intCode.size(); index += 4) {
-            if (currentCode.get(index) == 1 || currentCode.get(index) == 2) {
-                if (isOperationAllowed(currentCode, index)) {
-                    executeOperation(currentCode, index);
-                } else { return List.of(-1); }
+        do {
+            final var instruction = this.getNextInstruction(currentCode);
+            if (isOperationAllowed(currentCode, instruction)) {
+                this.executeOperation(currentCode, instruction);
+                this.updateInstructionIndex(instruction);
             } else {
                 return currentCode;
             }
-        }
+
+        } while (instructionIndex < intCode.size() - 1);
         return currentCode;
     }
 
@@ -31,48 +35,129 @@ public class IntCodeProgram {
         currentCode.set(1, noun);
         currentCode.set(2, verb);
 
-        for (var index = 0; index < this.intCode.size(); index += 4) {
-            if (currentCode.get(index) == 1 || currentCode.get(index) == 2) {
-                if (isOperationAllowed(currentCode, index)) {
-                    executeOperation(currentCode, index);
-                } else { return List.of(-1); }
+        do {
+            final var instruction = this.getNextInstruction(currentCode);
+            if (isOperationAllowed(currentCode, instruction)) {
+                this.executeOperation(currentCode, instruction);
+                this.updateInstructionIndex(instruction);
             } else {
                 return currentCode;
             }
-        }
+
+        } while (instructionIndex < intCode.size() - 1);
         return currentCode;
     }
 
-    public void executeOperation(List<Integer> currentCode, final int operationCodeIndex) {
-        switch (currentCode.get(operationCodeIndex)) {
+    private void executeOperation(List<Integer> currentCode, final Instruction instruction) {
+        final var destructuredCode = this.integerToDigitsList(currentCode.get(instructionIndex));
+        int firstValue, secondValue, index;
+
+        switch (instruction.getOperationCode()) {
             case 1:
-                currentCode.set(currentCode.get(operationCodeIndex + 3),
-                        currentCode.get(currentCode.get(operationCodeIndex + 1)) + currentCode.get(currentCode.get(operationCodeIndex + 2)));
-                return;
+                if (destructuredCode.get(2).equals(1)) {
+                    firstValue = instruction.getParameters().get(0);
+                } else { firstValue = currentCode.get(currentCode.get(instructionIndex + 1)); }
+
+                if (destructuredCode.get(1).equals(1)) {
+                    secondValue = instruction.getParameters().get(1);
+                } else { secondValue = currentCode.get(currentCode.get(instructionIndex + 2)); }
+
+                if (destructuredCode.get(0).equals(1)) {
+                    index = currentCode.get(currentCode.get(instructionIndex + 3));
+                } else { index = instruction.getParameters().get(2); }
+
+                currentCode.set(index, firstValue + secondValue);
+                break;
             case 2:
-                currentCode.set(currentCode.get(operationCodeIndex + 3),
-                        currentCode.get(currentCode.get(operationCodeIndex + 1)) * currentCode.get(currentCode.get(operationCodeIndex + 2)));
-                return;
+                if (destructuredCode.get(2).equals(1)) {
+                    firstValue = instruction.getParameters().get(0);
+                } else { firstValue = currentCode.get(currentCode.get(instructionIndex + 1)); }
+
+                if (destructuredCode.get(1).equals(1)) {
+                    secondValue = instruction.getParameters().get(1);
+                } else { secondValue = currentCode.get(currentCode.get(instructionIndex + 2)); }
+
+                if (destructuredCode.get(0).equals(1)) {
+                    index = currentCode.get(currentCode.get(instructionIndex + 3));
+                } else { index = instruction.getParameters().get(2); }
+
+                currentCode.set(index, firstValue * secondValue);
+                break;
             case 3:
                 final var input = programIO.inputValue();
-                currentCode.set(currentCode.get(operationCodeIndex + 1), input);
+                currentCode.set(currentCode.get(instructionIndex + 1), input);
+                break;
             case 4:
-                programIO.outputValue(currentCode.get(operationCodeIndex + 1));
+                if(destructuredCode.get(2).equals(1)) {
+                    programIO.outputValue(currentCode.get(instructionIndex + 1));
+            } else { programIO.outputValue(currentCode.get(currentCode.get(instructionIndex + 1))); }
+                break;
             default:
+                break;
         }
     }
 
-    private boolean isOperationAllowed(final List<Integer> currentCode, final int operationCodeIndex) {
-        if (currentCode.get(operationCodeIndex) == 1 || currentCode.get(operationCodeIndex) == 2) {
-            return currentCode.size() > operationCodeIndex + 3 &&
-                    currentCode.size() > currentCode.get(operationCodeIndex + 3) &&
-                    currentCode.size() > currentCode.get(operationCodeIndex + 2) &&
-                    currentCode.size() > currentCode.get(operationCodeIndex + 1);
+    public boolean isOperationAllowed(final List<Integer> currentCode, final Instruction instruction) {
+        final var destructuredCode = this.integerToDigitsList(currentCode.get(instructionIndex));
+
+        if (instruction.getOperationCode().equals(1) || instruction.getOperationCode().equals(2)) {
+            return currentCode.size() >= instructionIndex + 3 &&
+                    destructuredCode.get(0).equals(0) ? currentCode.size() > currentCode.get(instructionIndex + 3) : destructuredCode.get(0).equals(0) ? currentCode.size() > currentCode.get(instructionIndex + 2) : !destructuredCode.get(0).equals(0) || currentCode.size() > currentCode.get(instructionIndex + 1);
+        }
+        if (instruction.getOperationCode().equals(3)) {
+            return currentCode.size() > instructionIndex + 1 &&
+                    currentCode.size() > currentCode.get(instructionIndex + 1);
+        }
+        if (instruction.getOperationCode().equals(4)) {
+            return currentCode.size() <= instructionIndex + 1 ||
+                    !destructuredCode.get(2).equals(0) || currentCode.size() > currentCode.get(instructionIndex + 1);
         }
         return true;
     }
 
     List<Integer> getIntCode() {
         return this.intCode;
+    }
+
+    public Instruction getNextInstruction(final List<Integer> code) {
+        final var destructuredCode = this.integerToDigitsList(code.get(instructionIndex));
+        switch (destructuredCode.get(4)) {
+            case 1:
+                return new Instruction(1, List.of(code.get(instructionIndex + 1), code.get(instructionIndex + 2), code.get(instructionIndex + 3)));
+            case 2:
+                return new Instruction(2, List.of(code.get(instructionIndex + 1), code.get(instructionIndex + 2), code.get(instructionIndex + 3)));
+            case 3:
+                return new Instruction(3, List.of(code.get(instructionIndex + 1)));
+            case 4:
+                return new Instruction(4, List.of(code.get(instructionIndex + 1)));
+            default:
+                return new Instruction(99, List.of());
+        }
+    }
+
+    public void updateInstructionIndex(final Instruction instruction) {
+        switch (intCode.get(instructionIndex)) {
+            case 1:
+            case 2:
+                instructionIndex += 4;
+                break;
+            case 3:
+            case 4:
+                instructionIndex += 2;
+                break;
+            default:
+                instructionIndex = this.intCode.size();
+                break;
+        }
+    }
+
+    public List<Integer> integerToDigitsList(final Integer integer) {
+        String integerAsString = Integer.toString(integer);
+        List<Integer> integerAsList = Arrays.stream(integerAsString.split("")).map(Integer::parseInt).collect(Collectors.toList());
+
+        while (integerAsList.size() < 5) {
+            integerAsList.add(0, 0);
+        }
+        return integerAsList;
     }
 }

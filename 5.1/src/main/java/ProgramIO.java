@@ -9,12 +9,12 @@ public class ProgramIO {
     }
 
     public Integer inputValue() {
-        String s = scanner.next();
+        System.out.println("Enter a value : ");
         return scanner.nextInt();
     }
 
     public void outputValue(final Integer value) {
-        System.out.println(value);
+        System.out.println("Output value : " + value);
     }
 
 }

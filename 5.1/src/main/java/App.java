@@ -4,8 +4,7 @@ public class App {
         final var fileLoader = new FileLoader("input.txt");
         final var intCodeProgram = new IntCodeProgram(fileLoader.getFileContent(), new ProgramIO());
 
-        final var result = ProgramRunner.determinateProgramInput(intCodeProgram, 19690720, 500, 500);
-
+        final var result = intCodeProgram.executeProgram();
         System.out.println(result);
     }
 }

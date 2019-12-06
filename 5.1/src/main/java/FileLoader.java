@@ -17,7 +17,7 @@ public class FileLoader {
     public List getFileContent() {
         List<String> inputCodeParsed = new ArrayList<>();
 
-        try (final var reader = new FileReader("C:\\Users\\Nelly\\IdeaProjects\\adventcalendar\\5.1\\target\\classes\\input.txt");
+        try (final var reader = new FileReader("C:\\Users\\Erwan Papail\\IdeaProjects\\advent-calendar\\5.1\\target\\classes\\input.txt");
              final var br = new BufferedReader(reader)) {
 
             var inputCodeRaw = br.readLine();
