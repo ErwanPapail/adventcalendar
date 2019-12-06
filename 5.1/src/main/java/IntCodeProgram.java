@@ -62,9 +62,8 @@ public class IntCodeProgram {
                     secondValue = instruction.getParameters().get(1);
                 } else { secondValue = currentCode.get(currentCode.get(instructionIndex + 2)); }
 
-                if (destructuredCode.get(0).equals(1)) {
-                    index = currentCode.get(currentCode.get(instructionIndex + 3));
-                } else { index = instruction.getParameters().get(2); }
+
+                    index = currentCode.get(instructionIndex + 3);
 
                 currentCode.set(index, firstValue + secondValue);
                 break;
@@ -77,9 +76,9 @@ public class IntCodeProgram {
                     secondValue = instruction.getParameters().get(1);
                 } else { secondValue = currentCode.get(currentCode.get(instructionIndex + 2)); }
 
-                if (destructuredCode.get(0).equals(1)) {
-                    index = currentCode.get(currentCode.get(instructionIndex + 3));
-                } else { index = instruction.getParameters().get(2); }
+
+                    index = currentCode.get(instructionIndex + 3);
+
 
                 currentCode.set(index, firstValue * secondValue);
                 break;
@@ -88,9 +87,7 @@ public class IntCodeProgram {
                 currentCode.set(currentCode.get(instructionIndex + 1), input);
                 break;
             case 4:
-                if(destructuredCode.get(2).equals(1)) {
                     programIO.outputValue(currentCode.get(instructionIndex + 1));
-            } else { programIO.outputValue(currentCode.get(currentCode.get(instructionIndex + 1))); }
                 break;
             default:
                 break;
@@ -136,7 +133,7 @@ public class IntCodeProgram {
     }
 
     public void updateInstructionIndex(final Instruction instruction) {
-        switch (intCode.get(instructionIndex)) {
+        switch (instruction.getOperationCode()) {
             case 1:
             case 2:
                 instructionIndex += 4;

@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8259c152-f24b-4b20-a3e6-6e03f75c7b35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/5.1/src/main/java/Instruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/src/main/java/FileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/src/main/java/FileLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/5.1/src/main/java/IntCodeProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/src/main/java/IntCodeProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/src/main/java/ProgramIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/src/main/java/ProgramIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/src/main/resources/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/src/main/resources/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/src/test/java/IntCodeProgramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/src/test/java/IntCodeProgramTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/target/5.1-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/5.1-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/classes/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/target/classes/FileLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/classes/FileLoader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/5.1/target/classes/IntCodeProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/classes/IntCodeProgram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/target/classes/META-INF/5.1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/target/classes/ProgramIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/classes/ProgramIO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/target/classes/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/classes/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.1/target/test-classes/IntCodeProgramTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/5.1/target/test-classes/IntCodeProgramTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/three-one/src/main/java/FileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/three-one/src/main/java/FileLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,5 +281,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="601" y="246" width="700" height="530" key="recent.locations.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575540181806" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/5.1/src/main/java/IntCodeProgram.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/5.1/src/main/java/IntCodeProgram.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/5.1/src/main/java/IntCodeProgram.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
